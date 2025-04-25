@@ -1,0 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #fff;
+  }
+  
+  /* Top bar (navegador falso) */
+  .top-bar {
+    height: 30px;
+    background: #cfeff4;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  /* Encabezado */
+  .main-header {
+    display: flex;
+    background: #f8c963;
+    padding: 20px;
+  }
+  
+  .header-image {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 165, 0, 0.3);
+    margin-right: 20px;
+  }
+  
+  .header-text {
+    flex: 1;
+  }
+  
+  .line {
+    height: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .line.short {
+    width: 50%;
+  }
+  
+  /* Cuadrícula de tarjetas */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .card {
+    width: 100%;
+    padding-top: 100%; /* mantiene proporción cuadrada */
+    position: relative;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Colores de tarjeta */
+  .card-blue {
+    background: #c6eef5;
+  }
+  
+  .card-red {
+    background: #f08a6d;
+  }
+  
+  .card-yellow {
+    background: #f7d78c;
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background: #eee;
+    padding: 20px 0;
+  }
+  
+  .footer-col {
+    width: 80px;
+    height: 40px;
+    background: #ccc;
+  }
+  
