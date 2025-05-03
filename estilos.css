@@ -1,96 +1,110 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
   body {
+    margin: 0;
     font-family: sans-serif;
-    background: #fff;
   }
   
-  /* Top bar (navegador falso) */
-  .top-bar {
-    height: 30px;
-    background: #cfeff4;
-    border-bottom: 2px solid #ccc;
-  }
-  
-  /* Encabezado */
-  .main-header {
+  header {
     display: flex;
-    background: #f8c963;
-    padding: 20px;
-  }
-  
-  .header-image {
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 165, 0, 0.3);
-    margin-right: 20px;
-  }
-  
-  .header-text {
-    flex: 1;
-  }
-  
-  .line {
-    height: 10px;
-    background: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .line.short {
-    width: 50%;
-  }
-  
-  /* Cuadrícula de tarjetas */
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    background-color: #f8c963;
+    align-items: center;
     padding: 30px;
   }
   
-  .card {
-    width: 100%;
-    padding-top: 100%; /* mantiene proporción cuadrada */
+  .imagen_encabezado {
+    width: 150px;
+    height: 150px;
+    background: #fcbf44;
+    margin-right: 20px;
+  }
+
+  .texto_encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .barra {
+    width: 350px;
+    height: 20px;
+    background-color: #f5b85d;
+    margin-bottom: 10px;
+  }
+
+  .linea {
+    width: 250px;
+    height: 10px;
+    background: white;
+    margin: 5px 0;
+  }
+  
+  .linea_corta {
+    width: 100px;
+    height: 10px;
+    background-color: white;
+    margin-top: 5px;
+  }
+
+  .cuadrados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+    background: white;
+  }
+
+  .cuadrado {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    padding-top: 10px;
+    box-sizing: border-box;
   }
   
-  .card::before {
-    content: '';
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    width: 70%;
-    height: 70%;
-    background: rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Colores de tarjeta */
-  .card-blue {
+  .cuadrado_celeste {
     background: #c6eef5;
+    border-top: 10px solid #87ddee;
+  }
+
+  .cuadrado2_celeste {
+    width: 50px;
+    height: 50px;
+    background-color: #87ddee;
   }
   
-  .card-red {
-    background: #f08a6d;
+  .cuadrado_naranja {
+    background: #f8a46f;
+    border-top: 10px solid #eb7c48;
   }
-  
-  .card-yellow {
-    background: #f7d78c;
+
+  .cuadrado2_naranja {
+    width: 50px;
+    height: 50px;
+    background-color: #eb7c48;
   }
-  
-  /* Footer */
-  .footer {
+
+  .cuadrado_amarillo {
+    background: #f7e188;
+    border-top: 10px solid #e9d054;
+  }
+
+  .cuadrado2_amarillo {
+    width: 50px;
+    height: 50px;
+    background-color: #e9d054;
+  }
+
+  .pie_de_pagina {
     display: flex;
     justify-content: space-around;
     background: #eee;
-    padding: 20px 0;
+    padding: 30px 0;
   }
   
-  .footer-col {
+  .columna_pdp {
     width: 80px;
     height: 40px;
     background: #ccc;
