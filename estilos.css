@@ -13,7 +13,7 @@
   .imagen_encabezado {
     width: 150px;
     height: 150px;
-    background: #fcbf44;
+    background: #f5b85d;
     margin-right: 20px;
   }
 
@@ -24,24 +24,24 @@
   }
   
   .barra {
-    width: 350px;
+    width: 200px;
     height: 20px;
-    background-color: #f5b85d;
+    background-color: #eea42e;
     margin-bottom: 10px;
   }
 
   .linea {
-    width: 250px;
+    width: 350px;
     height: 10px;
     background: white;
-    margin: 5px 0;
+    margin: 10px 0;
   }
   
   .linea_corta {
-    width: 100px;
+    width: 200px;
     height: 10px;
     background-color: white;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .cuadrados {
@@ -49,13 +49,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-content: center;
-    padding: 40px;
+    padding: 100px;
     background: white;
   }
 
   .cuadrado {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,35 +66,35 @@
   
   .cuadrado_celeste {
     background: #c6eef5;
-    border-top: 10px solid #87ddee;
+    border-top: 15px solid #87ddee;
   }
 
   .cuadrado2_celeste {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: #87ddee;
   }
   
   .cuadrado_naranja {
     background: #f8a46f;
-    border-top: 10px solid #eb7c48;
+    border-top: 15px solid #eb7c48;
   }
 
   .cuadrado2_naranja {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: #eb7c48;
   }
 
   .cuadrado_amarillo {
-    background: #f7e188;
-    border-top: 10px solid #e9d054;
+    background: #fbca81;
+    border-top: 15px solid #f7b95c;
   }
 
   .cuadrado2_amarillo {
-    width: 50px;
-    height: 50px;
-    background-color: #e9d054;
+    width: 70px;
+    height: 70px;
+    background-color: #f7b95c;
   }
 
   .pie_de_pagina {
@@ -104,9 +104,29 @@
     padding: 30px 0;
   }
   
-  .columna_pdp {
-    width: 80px;
-    height: 40px;
-    background: #ccc;
+  .columna_pdp_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
+  .columna_pdp {
+    width: 150px;
+    height: 20px;
+    background: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .linea_pdp {
+    width: 150px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  
+  .linea_pdp_corta {
+    width: 75px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+  }
